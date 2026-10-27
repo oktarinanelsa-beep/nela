@@ -1,84 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ELLA - AU</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<title>KEMAH DI HUTAN TERLARANG</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#0a0a0a;color:#fff;font-family:'Inter',sans-serif;display:flex;justify-content:center}
-.container{width:100%;max-width:480px;background:#111;min-height:100vh;border-left:1px solid #222;border-right:1px solid #222}
-.cover{width:100%;height:380px;background:linear-gradient(to bottom,transparent, #111),url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600') center/cover}
-.content{padding:25px}
-h1{font-family:'Playfair Display',serif;font-size:32px;letter-spacing:1px;margin-bottom:5px}
-.sub{color:#888;font-size:13px;letter-spacing:2px;margin-bottom:20px}
-.warn{border:1px solid #333;padding:12px;font-size:11px;color:#aaa;line-height:1.5;margin-bottom:25px}
+.container{width:100%;max-width:480px;background:#111;min-height:100vh;border-left:1px solid #1a1a1a;border-right:1px solid #1a1a1a}
+.cover{height:360px;background:linear-gradient(to bottom,rgba(0,0,0,0.2),#111),url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=600') center/cover;position:relative}
+.cover-text{position:absolute;bottom:20px;left:20px;right:20px}
+h1{font-family:'Playfair Display',serif;font-size:28px;line-height:1.1;letter-spacing:1px}
+.sub{font-size:11px;letter-spacing:3px;color:#888;margin-top:8px}
+.content{padding:20px}
+.warn{border:1px solid #222;background:#0f0f0f;padding:12px;border-radius:8px;font-size:11px;color:#aaa;line-height:1.6}
 .warn b{color:white}
-.tweet{border-bottom:1px solid #222;padding:15px 0;display:flex;gap:12px}
-.pfp{width:40px;height:40px;border-radius:50%;background:#fff}
-.t-name{font-weight:600;font-size:14px}
-.t-user{color:#666;font-size:13px}
-.t-text{font-size:14px;line-height:1.5;margin-top:6px;color:#e5e5e5}
-.t-img{margin-top:10px;width:100%;height:220px;background:#1a1a1a;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#444;font-size:12px}
-.divider{text-align:center;color:#333;padding:20px 0;font-size:12px;letter-spacing:3px}
-.imessage-wrap{background:#000;border-radius:20px;padding:15px;margin-top:15px}
-.bubble{max-width:75%;padding:10px 14px;border-radius:18px;font-size:13px;margin-bottom:6px}
-.left{background:#262626;color:white;align-self:flex-start;border-bottom-left-radius:4px}
-.right{background:#0a84ff;color:white;align-self:flex-end;border-bottom-right-radius:4px;margin-left:auto}
-.chat{display:flex;flex-direction:column}
-.lock-note{color:#666;font-size:11px;text-align:center;margin:10px 0}
-.btn{width:100%;background:white;color:black;padding:14px;text-align:center;border-radius:30px;font-weight:600;font-size:13px;margin-top:30px;display:block;text-decoration:none;letter-spacing:1px}
+.cast-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0}
+.cast{background:#161616;border:1px solid #222;border-radius:12px;padding:12px;display:flex;gap:10px;align-items:center}
+.ava{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0}
+.section-title{font-size:11px;letter-spacing:3px;color:#555;text-align:center;margin:25px 0 15px;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;padding:10px 0}
+.chat-box{background:#000;border:1px solid #1a1a1a;border-radius:18px;padding:15px;margin-bottom:15px}
+.chat-head{font-size:12px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.bubble{max-width:85%;padding:10px 14px;border-radius:16px;font-size:13px;margin-bottom:6px;line-height:1.4}
+.left{background:#1e1e1e;color:#e5e5e5;align-self:flex-start;border-bottom-left-radius:4px}
+.right{background:#fff;color:#000;align-self:flex-end;margin-left:auto;border-bottom-right-radius:4px;font-weight:500}
+.chat{display:flex;flex-direction:column;gap:2px}
+.name{font-size:10px;color:#666;font-weight:600;margin-bottom:2px;margin-top:8px}
+.time{font-size:10px;color:#444;text-align:center;margin:12px 0}
+.btn{width:100%;background:white;color:black;padding:14px;border-radius:30px;text-align:center;font-weight:700;font-size:12px;letter-spacing:1px;margin-top:25px;display:block;text-decoration:none}
+.tweet{border:1px solid #1a1a1a;background:#0f0f0f;border-radius:15px;padding:15px;margin-bottom:12px;display:flex;gap:10px}
 </style>
 </head>
 <body>
 <div class="container">
-<div class="cover"></div>
+<div class="cover">
+<div class="cover-text">
+<h1>KEMAH DI<br><span style="color:#ff3b3b">HUTAN TERLARANG</span></h1>
+<div class="sub">A HORROR AU BY NELA</div>
+</div>
+</div>
+
 <div class="content">
-<h1>ELLA</h1>
-<div class="sub">A PAMAN VINCENT AU</div>
-
 <div class="warn">
-<b>WARNING:</b> Age gap, possessive uncle, uncle x niece dynamic, slow burn. 18+ only. <br><br>
-by @oktarinanelsa-beep on github
+<b>WARNING:</b> Horror, gore tipis, hutan terlarang, hilang, kerasukan.<br>
+<b>CAST:</b> Ella (main), Arga, Lora, Kiki - 4 sahabat nekat kemah di hutan yang sudah dilarang warga 20 tahun.<br><br>
+<b>Lokasi:</b> Hutan Wana Mati, Jawa Tengah • <b>Waktu:</b> 02:13 AM
 </div>
 
-<!-- TWITTER PART -->
-<div class="tweet">
-<div class="pfp" style="background:url('https://i.pravatar.cc/100?img=5') center/cover"></div>
-<div style="flex:1">
-<div><span class="t-name">ella</span> <span class="t-user">@ellabeb_ · 7h</span></div>
-<div class="t-text">paman vincent jemput pake kemeja item lengan digulung, SATU KAMPUS NGELIATIN ANJIR 😭😭 gantengnya kebangetan</div>
-<div class="t-img">[ foto kampus ]</div>
-</div>
+<div class="cast-grid">
+<div class="cast"><div class="ava" style="background:#ff4d6d">E</div><div><div style="font-size:12px;font-weight:700">Ella</div><div style="font-size:10px;color:#666">Paling penakut, indigo lemah</div></div></div>
+<div class="cast"><div class="ava" style="background:#333">A</div><div><div style="font-size:12px;font-weight:700">Arga</div><div style="font-size:10px;color:#666">Ketua, pemberani</div></div></div>
+<div class="cast"><div class="ava" style="background:#7a5cff">L</div><div><div style="font-size:12px;font-weight:700">Lora</div><div style="font-size:10px;color:#666">Bisa lihat, anak dukun</div></div></div>
+<div class="cast"><div class="ava" style="background:#ffbd2e;color:black">K</div><div><div style="font-size:12px;font-weight:700">Kiki</div><div style="font-size:10px;color:#666">Berisik, panikan</div></div></div>
 </div>
 
-<div class="tweet">
-<div class="pfp" style="background:#222"></div>
-<div style="flex:1">
-<div><span class="t-name">Paman Vincent</span> <span class="t-user">@vincent28 · 5h</span></div>
-<div class="t-text">Ella, pulang jam berapa? Paman tunggu di depan gerbang.</div>
-</div>
-</div>
+<div class="section-title">— GROUP CHAT —</div>
 
-<div class="divider">— iMESSAGE —</div>
-
-<div class="imessage-wrap">
-<div class="lock-note">Today 19:24 • Ella's iPhone</div>
+<div class="chat-box">
+<div class="chat-head">👥 Grup Kemah Bodoh - 4 anggota • 02:13 AM</div>
 <div class="chat">
-<div class="bubble left">Ella dimana? Jam 7 lewat.</div>
-<div class="bubble left">Shareloc sekarang.</div>
-<div class="bubble right">Di kampus Paman! Bentaran lagi plis 😭</div>
-<div class="bubble left">5 menit Paman sampai. Jangan bikin Paman marah.</div>
-<div class="bubble right">Ih galak bgt! Tapi tadi ganteng bgt tau 😳</div>
-<div class="bubble left">Masuk mobil. Nanti di rumah kita bicara.</div>
-<div class="bubble left">Soal kenapa kamu bikin Paman gak bisa berhenti mikirin kamu.</div>
+<div class="name">KIKI</div>
+<div class="bubble left">anjir tenda gue robek 😭😭 anginnya kenceng bgt</div>
+
+<div class="name">ARGA</div>
+<div class="bubble left">Kiki jangan panik. Lora, api unggunnya jangan mati.</div>
+
+<div class="name">LORA</div>
+<div class="bubble left" style="color:#ff6666">Arga... dari tadi ada yang ngeliatin kita dari atas pohon. 3. Jangan lihat ke atas.</div>
+
+<div class="name">ELLA</div>
+<div class="bubble left" style="border:1px solid red">LORA JANGAN BERCANDA 😭😭 AKU DENGER SUARA NANGIS DARI HUTAN DALAM</div>
+
+<div class="name">ARGA</div>
+<div class="bubble left">Ella masuk tenda dulu. Kiki jaga Ella.</div>
+
+<div class="time">Ella mengirim lokasi • Hutan Wana Mati - Tengah Hutan</div>
+
+<div class="name">ELLA</div>
+<div class="bubble left">ADA YANG TARIK KAKI GUE 😭😭😭 ARGA LORA KIKI TOLONG AKU DITARIK KE DALAM HUTAN</div>
+
+<div class="name">LORA</div>
+<div class="bubble left" style="background:#440000;color:white">ELLA JANGAN LIHAT BELAKANG!!! LARI!!! ITU BUKAN MANUSIA!!!</div>
+
+<div class="time">Ella sedang mengetik...</div>
+<div class="time" style="color:red">Ella offline • Baterai 1%</div>
 </div>
 </div>
 
-<a class="btn" href="#">NEXT CHAPTER</a>
+<div class="section-title">— LAST SEEN —</div>
 
-<div style="text-align:center;color:#444;font-size:10px;margin-top:40px;letter-spacing:2px">INSPIRED BY SHADEOFSKYE.GITHUB.IO/MINWON</div>
+<div class="tweet">
+<div class="ava" style="background:#ff4d6d">E</div>
+<div style="flex:1"><div style="font-size:12px;font-weight:700">Ella @ellabeb • 02:15 AM</div><div style="font-size:13px;margin-top:6px;line-height:1.4">kalo gue ga balik, tolong bilang ke mama gue, gue sayang mama 😭<br><span style="color:#666;font-size:11px">📍 Hutan Terlarang</span></div></div>
+</div>
+
+<a class="btn" href="#" onclick="alert('PART 2: Pencarian Ella - Lora kerasukan... Mau lanjut?')">NEXT CHAPTER → ELLA HILANG</a>
+
+<div style="text-align:center;color:#333;font-size:9px;margin-top:35px;letter-spacing:2px">COPY OF KONTRAKAN-HAECHAN-LUNA.PAGES.DEV TEMPLATE<br>ORIGINAL STORY: KEMAH DI HUTAN TERLARANG BY NELA</div>
 
 </div>
 </div>
