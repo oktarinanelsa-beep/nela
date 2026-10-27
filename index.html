@@ -1,103 +1,86 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ella & Paman Vincent - AU</title>
+<title>ELLA - AU</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-body{margin:0;background:#f0f2f5;font-family:'Poppins',sans-serif}
-.cover{height:45vh;background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800') center/cover;display:flex;align-items:end;padding:20px;color:white}
-.container{max-width:500px;margin:-30px auto 0;background:white;border-radius:25px 25px 0 0;padding:25px;position:relative}
-.badge{display:inline-block;background:black;color:white;padding:4px 12px;border-radius:20px;font-size:11px;margin-bottom:10px}
-h1{margin:5px 0 5px;font-size:22px}
-.meta{color:gray;font-size:12px;margin-bottom:15px}
-.tabs{display:flex;gap:10px;margin:20px 0;border-bottom:1px solid #eee;padding-bottom:10px}
-.tab{padding:8px 18px;border-radius:20px;background:#f0f2f5;font-size:13px;cursor:pointer}
-.tab.active{background:black;color:white}
-.content{display:none}
-.content.active{display:block}
-.tweet{border:1px solid #eee;border-radius:15px;padding:15px;margin-bottom:15px}
-.tweet-head{display:flex;gap:10px;align-items:center}
-.avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(45deg,#ff758c,#ff7eb3);display:flex;align-items:center;justify-content:center;color:white;font-weight:bold}
-.ig-post{border:1px solid #eee;border-radius:15px;overflow:hidden;margin-bottom:15px}
-.ig-head{padding:12px;display:flex;gap:10px;align-items:center;font-weight:600;font-size:13px}
-.ig-img{width:100%;height:300px;background:linear-gradient(45deg,#ddd,#bbb);display:flex;align-items:center;justify-content:center;color:gray}
-.ig-action{padding:12px;font-size:13px}
-.imessage{margin-bottom:10px;display:flex;flex-direction:column}
-.bubble{max-width:70%;padding:10px 14px;border-radius:18px;font-size:13px;margin-bottom:4px}
-.left{background:#e5e5ea;align-self:flex-start}
-.right{background:#007aff;color:white;align-self:flex-end}
-.lock{background:#000;color:white;border-radius:15px;padding:20px;text-align:center;margin-bottom:15px}
-.pin-box{display:flex;gap:8px;justify-content:center;margin:15px 0}
-.pin{width:12px;height:12px;border-radius:50%;border:1px solid white}
-.btn{display:block;width:100%;padding:12px;background:black;color:white;border-radius:25px;text-align:center;text-decoration:none;margin-top:15px;font-size:14px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0a;color:#fff;font-family:'Inter',sans-serif;display:flex;justify-content:center}
+.container{width:100%;max-width:480px;background:#111;min-height:100vh;border-left:1px solid #222;border-right:1px solid #222}
+.cover{width:100%;height:380px;background:linear-gradient(to bottom,transparent, #111),url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600') center/cover}
+.content{padding:25px}
+h1{font-family:'Playfair Display',serif;font-size:32px;letter-spacing:1px;margin-bottom:5px}
+.sub{color:#888;font-size:13px;letter-spacing:2px;margin-bottom:20px}
+.warn{border:1px solid #333;padding:12px;font-size:11px;color:#aaa;line-height:1.5;margin-bottom:25px}
+.warn b{color:white}
+.tweet{border-bottom:1px solid #222;padding:15px 0;display:flex;gap:12px}
+.pfp{width:40px;height:40px;border-radius:50%;background:#fff}
+.t-name{font-weight:600;font-size:14px}
+.t-user{color:#666;font-size:13px}
+.t-text{font-size:14px;line-height:1.5;margin-top:6px;color:#e5e5e5}
+.t-img{margin-top:10px;width:100%;height:220px;background:#1a1a1a;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#444;font-size:12px}
+.divider{text-align:center;color:#333;padding:20px 0;font-size:12px;letter-spacing:3px}
+.imessage-wrap{background:#000;border-radius:20px;padding:15px;margin-top:15px}
+.bubble{max-width:75%;padding:10px 14px;border-radius:18px;font-size:13px;margin-bottom:6px}
+.left{background:#262626;color:white;align-self:flex-start;border-bottom-left-radius:4px}
+.right{background:#0a84ff;color:white;align-self:flex-end;border-bottom-right-radius:4px;margin-left:auto}
+.chat{display:flex;flex-direction:column}
+.lock-note{color:#666;font-size:11px;text-align:center;margin:10px 0}
+.btn{width:100%;background:white;color:black;padding:14px;text-align:center;border-radius:30px;font-weight:600;font-size:13px;margin-top:30px;display:block;text-decoration:none;letter-spacing:1px}
 </style>
 </head>
 <body>
-
-<div class="cover">
-<div>
-<span class="badge">ROMANCE AU • 18+</span>
-<h1>Ella & Paman Vincent</h1>
-<p style="font-size:13px;opacity:0.8">Paman yang posesif, keponakan yang manja. Satu rumah, satu rahasia.</p>
-</div>
-</div>
-
 <div class="container">
-<div class="meta">by @oktarinanelsa • 2.3k likes • ongoing</div>
-<div style="background:#fff3f5;border-radius:12px;padding:12px;font-size:12px;color:#d14b6a">⚠️ AU ini mengandung age gap, Paman x Keponakan, posesif. Bijak dalam membaca!</div>
+<div class="cover"></div>
+<div class="content">
+<h1>ELLA</h1>
+<div class="sub">A PAMAN VINCENT AU</div>
 
-<div class="tabs">
-<div class="tab active" onclick="openTab('twitter')">Twitter</div>
-<div class="tab" onclick="openTab('ig')">Instagram</div>
-<div class="tab" onclick="openTab('chat')">iMessage</div>
+<div class="warn">
+<b>WARNING:</b> Age gap, possessive uncle, uncle x niece dynamic, slow burn. 18+ only. <br><br>
+by @oktarinanelsa-beep on github
 </div>
 
-<div id="twitter" class="content active">
+<!-- TWITTER PART -->
 <div class="tweet">
-<div class="tweet-head"><div class="avatar">E</div><div><b>Ella</b> @ellabeb • 2h</div></div>
-<div style="margin-top:10px;font-size:14px">tolong bgt Paman Vincent jemput gue pake kemeja item lengan digulung, SATU KAMPUS NGELIATIN 😭😭</div>
+<div class="pfp" style="background:url('https://i.pravatar.cc/100?img=5') center/cover"></div>
+<div style="flex:1">
+<div><span class="t-name">ella</span> <span class="t-user">@ellabeb_ · 7h</span></div>
+<div class="t-text">paman vincent jemput pake kemeja item lengan digulung, SATU KAMPUS NGELIATIN ANJIR 😭😭 gantengnya kebangetan</div>
+<div class="t-img">[ foto kampus ]</div>
 </div>
+</div>
+
 <div class="tweet">
-<div class="tweet-head"><div class="avatar" style="background:linear-gradient(45deg,#333,#777)">V</div><div><b>Paman Vincent</b> @vincent.28 • 1h</div></div>
-<div style="margin-top:10px;font-size:14px">Ella pulang jam berapa? Paman tunggu di depan.</div>
+<div class="pfp" style="background:#222"></div>
+<div style="flex:1">
+<div><span class="t-name">Paman Vincent</span> <span class="t-user">@vincent28 · 5h</span></div>
+<div class="t-text">Ella, pulang jam berapa? Paman tunggu di depan gerbang.</div>
 </div>
 </div>
 
-<div id="ig" class="content">
-<div class="ig-post">
-<div class="ig-head"><div class="avatar" style="width:30px;height:30px;font-size:12px">E</div> ellabeb</div>
-<div class="ig-img">[ Foto Ella di kampus ]</div>
-<div class="ig-action"><b>ellabeb</b> nugas terus 😮‍💨<br><span style="color:gray">liked by vincent.28 and 1,203 others</span><br><b>vincent.28</b> Pulang sekarang.</div>
+<div class="divider">— iMESSAGE —</div>
+
+<div class="imessage-wrap">
+<div class="lock-note">Today 19:24 • Ella's iPhone</div>
+<div class="chat">
+<div class="bubble left">Ella dimana? Jam 7 lewat.</div>
+<div class="bubble left">Shareloc sekarang.</div>
+<div class="bubble right">Di kampus Paman! Bentaran lagi plis 😭</div>
+<div class="bubble left">5 menit Paman sampai. Jangan bikin Paman marah.</div>
+<div class="bubble right">Ih galak bgt! Tapi tadi ganteng bgt tau 😳</div>
+<div class="bubble left">Masuk mobil. Nanti di rumah kita bicara.</div>
+<div class="bubble left">Soal kenapa kamu bikin Paman gak bisa berhenti mikirin kamu.</div>
 </div>
 </div>
 
-<div id="chat" class="content">
-<div class="lock">
-<div style="font-size:12px;opacity:0.7">Ella's iPhone - Enter PIN 1234</div>
-<div class="pin-box"><div class="pin" style="background:white"></div><div class="pin" style="background:white"></div><div class="pin" style="background:white"></div><div class="pin" style="background:white"></div></div>
-<div style="font-size:11px">Tap to unlock</div>
-</div>
-<div class="imessage">
-<div class="bubble left">Ella dimana?</div>
-<div class="bubble right">Di kampus Paman!</div>
-<div class="bubble left">Shareloc. Paman jemput. 5 menit.</div>
-<div class="bubble right">Ih galak bgt 😳 tapi ganteng...</div>
-<div class="bubble left">Masuk mobil. Kita bicara di rumah.</div>
-</div>
-</div>
+<a class="btn" href="#">NEXT CHAPTER</a>
 
-<a class="btn" href="#">Next Chapter →</a>
-</div>
+<div style="text-align:center;color:#444;font-size:10px;margin-top:40px;letter-spacing:2px">INSPIRED BY SHADEOFSKYE.GITHUB.IO/MINWON</div>
 
-<script>
-function openTab(id){
-document.querySelectorAll('.content').forEach(c=>c.classList.remove('active'));
-document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-document.getElementById(id).classList.add('active');
-event.target.classList.add('active');
-}
-</script>
+</div>
+</div>
 </body>
 </html>
